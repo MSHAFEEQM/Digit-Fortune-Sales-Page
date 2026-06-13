@@ -324,7 +324,7 @@ function Showcase() {
                 <div className={`relative aspect-[16/10] rounded-xl overflow-hidden bg-gradient-to-br ${b.tone} border border-white/5 flex items-center justify-center`}>
                   {"image" in b && (b as { image?: string }).image ? (
                     <img
-                      src={heroAsset}
+                      src={ChatGPTAsset}
                       alt={b.title}
                       loading="lazy"
                       className="absolute inset-0 w-full h-full object-contain"
