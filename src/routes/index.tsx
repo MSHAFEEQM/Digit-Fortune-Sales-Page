@@ -7,8 +7,7 @@ import {
   ChevronDown, Mail, ArrowRight, Flame, Clock, Gift,
 } from "lucide-react";
 import heroAsset from "@/assets/images/hero.png";
-import ChatGPTAsset from "@/assets/images/Chat150.png";
-import BundleAsset from "@/assets/chatgpt-prompts-bundle.jpeg.asset.json";
+import { BundleAsset } from "@/assets/images";
 import { Countdown } from "@/components/Countdown";
 import { StickyCTA } from "@/components/StickyCTA";
 
