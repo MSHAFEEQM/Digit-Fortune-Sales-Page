@@ -6,8 +6,22 @@ import {
   DollarSign, Globe, Package, Lightbulb, GraduationCap, Lock, BadgeCheck,
   ChevronDown, Mail, ArrowRight, Flame, Clock, Gift,
 } from "lucide-react";
-import heroAsset from "@/assets/images/hero.png";
-import { BundleAsset } from "@/assets/images";
+  import heroAsset from "@/assets/images/hero.png";
+  import Chat150   from "@/assets/images/chat150.png"
+  import busin21  from "@/assets/images/busin21.png"
+  import Chat17  from "@/assets/images/chat17.png"
+  import Midj  from "@/assets/images/Midj.png"
+  import Kids from "@/assets/images/Kids.png"
+  import cook8000 from "@/assets/images/8000cook.png"
+  import Planner from "@/assets/images/Planner.png"
+  import canva from "@/assets/images/canva.png"
+  import book400  from "@/assets/images/400ebook.png"
+  import land from "@/assets/images/land.png"
+  import resume  from "@/assets/images/resume.png"
+  import office from "@/assets/images/office.png"
+  import cook1800  from "@/assets/images/1800cook.png"
+  import sound450 from "@/assets/images/sound450.png"
+  import guide from "@/assets/images/guide.png"
 import { Countdown } from "@/components/Countdown";
 import { StickyCTA } from "@/components/StickyCTA";
 
@@ -53,21 +67,21 @@ export const Route = createFileRoute("/")({
 /* ---------------- Data ---------------- */
 
 const bundles = [
-  { title: "150,000+ ChatGPT Prompts Bundle 2.0", desc: "Advanced prompts for content, marketing, sales, coding and productivity.", count: "150K+", tone: "from-emerald-500/30 to-emerald-900/10", image: BundleAsset.url1},
-  { title: "21,000+ Midjourney Prompts", desc: "AI-generated business visuals and startup concepts.", count: "21K+", tone: "from-indigo-500/30 to-indigo-900/10", image: BundleAsset.url2},
-  { title: "17,500+ ChatGPT Business Prompts", desc: "Business growth, marketing and automation prompts.", count: "17.5K+", tone: "from-teal-500/30 to-teal-900/10", image: BundleAsset.url3},
-  { title: "12,000+ Midjourney Prompts Bundle", desc: "Creative AI image generation prompts.", count: "12K+", tone: "from-purple-500/30 to-purple-900/10", image: BundleAsset.url4},
-  { title: "14,000+ Kids Worksheets Collection", desc: "Educational printable activities.", count: "14K+", tone: "from-sky-500/30 to-sky-900/10" , image: BundleAsset.url5},
-  { title: "8,000+ Recipe & Food PLR Articles", desc: "Ready-to-use food niche content.", count: "8K+", tone: "from-orange-500/30 to-orange-900/10" , image: BundleAsset.url6},
-  { title: "1,700+ Digital Planners", desc: "Journals, habit trackers and productivity planners.", count: "1.7K+", tone: "from-pink-500/30 to-pink-900/10" , image: BundleAsset.url7},
-  { title: "420 Canva Templates", desc: "Professional editable designs.", count: "420", tone: "from-cyan-500/30 to-cyan-900/10" , image: BundleAsset.url8},
-  { title: "400 PLR eBooks", desc: "Ready-made digital content.", count: "400", tone: "from-amber-500/30 to-amber-900/10" , image: BundleAsset.url9},
-  { title: "300+ Landing Page Templates", desc: "Conversion-focused page designs.", count: "300+", tone: "from-blue-500/30 to-blue-900/10" , image: BundleAsset.url10},
-  { title: "300+ Resume Templates", desc: "Modern professional resumes.", count: "300+", tone: "from-slate-500/30 to-slate-900/10" , image: BundleAsset.url11},
-  { title: "3,000+ MS Office Templates", desc: "Excel, Word and PowerPoint resources.", count: "3K+", tone: "from-blue-600/30 to-blue-950/10" , image: BundleAsset.url12},
-  { title: "1,800+ Cooking eBooks & Articles", desc: "Recipes and food resources.", count: "1.8K+", tone: "from-rose-500/30 to-rose-900/10" , image: BundleAsset.url13},
-  { title: "450+ Sound Effects", desc: "Video editing and content creation assets.", count: "450+", tone: "from-violet-500/30 to-violet-900/10" , image: BundleAsset.url14},
-  { title: "Ultimate Guide to Selling Digital Products", desc: "Step-by-step business blueprint.", count: "Guide", tone: "from-yellow-500/30 to-yellow-900/10" , image: BundleAsset.url15},
+  { title: "150,000+ ChatGPT Prompts Bundle 2.0", desc: "Advanced prompts for content, marketing, sales, coding and productivity.", count: "150K+", tone: "from-emerald-500/30 to-emerald-900/10", image: Chat150},
+  { title: "21,000+ Midjourney Prompts", desc: "AI-generated business visuals and startup concepts.", count: "21K+", tone: "from-indigo-500/30 to-indigo-900/10", image: busin21},
+  { title: "17,500+ ChatGPT Business Prompts", desc: "Business growth, marketing and automation prompts.", count: "17.5K+", tone: "from-teal-500/30 to-teal-900/10", image: Chat17},
+  { title: "12,000+ Midjourney Prompts Bundle", desc: "Creative AI image generation prompts.", count: "12K+", tone: "from-purple-500/30 to-purple-900/10", image: Midj},
+  { title: "14,000+ Kids Worksheets Collection", desc: "Educational printable activities.", count: "14K+", tone: "from-sky-500/30 to-sky-900/10" , image: Kids},
+  { title: "8,000+ Recipe & Food PLR Articles", desc: "Ready-to-use food niche content.", count: "8K+", tone: "from-orange-500/30 to-orange-900/10" , image: cook8000},
+  { title: "1,700+ Digital Planners", desc: "Journals, habit trackers and productivity planners.", count: "1.7K+", tone: "from-pink-500/30 to-pink-900/10" , image: Planner},
+  { title: "420 Canva Templates", desc: "Professional editable designs.", count: "420", tone: "from-cyan-500/30 to-cyan-900/10" , image: canva},
+  { title: "400 PLR eBooks", desc: "Ready-made digital content.", count: "400", tone: "from-amber-500/30 to-amber-900/10" , image: book400},
+  { title: "300+ Landing Page Templates", desc: "Conversion-focused page designs.", count: "300+", tone: "from-blue-500/30 to-blue-900/10" , image: land},
+  { title: "300+ Resume Templates", desc: "Modern professional resumes.", count: "300+", tone: "from-slate-500/30 to-slate-900/10" , image: resume},
+  { title: "3,000+ MS Office Templates", desc: "Excel, Word and PowerPoint resources.", count: "3K+", tone: "from-blue-600/30 to-blue-950/10" , image: office},
+  { title: "1,800+ Cooking eBooks & Articles", desc: "Recipes and food resources.", count: "1.8K+", tone: "from-rose-500/30 to-rose-900/10" , image: cook1800},
+  { title: "450+ Sound Effects", desc: "Video editing and content creation assets.", count: "450+", tone: "from-violet-500/30 to-violet-900/10" , image: sound450},
+  { title: "Ultimate Guide to Selling Digital Products", desc: "Step-by-step business blueprint.", count: "Guide", tone: "from-yellow-500/30 to-yellow-900/10" , image: guide},
 ];
 
 const valueRows = [
