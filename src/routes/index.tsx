@@ -54,7 +54,7 @@ export const Route = createFileRoute("/")({
 /* ---------------- Data ---------------- */
 
 const bundles = [
-  { title: "150,000+ ChatGPT Prompts Bundle 2.0", desc: "Advanced prompts for content, marketing, sales, coding and productivity.", count: "150K+", tone: "from-emerald-500/30 to-emerald-900/10", image: ChatGPTAsset},
+  { title: "150,000+ ChatGPT Prompts Bundle 2.0", desc: "Advanced prompts for content, marketing, sales, coding and productivity.", count: "150K+", tone: "from-emerald-500/30 to-emerald-900/10", image: BundleAsset.url1},
   { title: "21,000+ Midjourney Prompts", desc: "AI-generated business visuals and startup concepts.", count: "21K+", tone: "from-indigo-500/30 to-indigo-900/10", image: BundleAsset.url2},
   { title: "17,500+ ChatGPT Business Prompts", desc: "Business growth, marketing and automation prompts.", count: "17.5K+", tone: "from-teal-500/30 to-teal-900/10", image: BundleAsset.url3},
   { title: "12,000+ Midjourney Prompts Bundle", desc: "Creative AI image generation prompts.", count: "12K+", tone: "from-purple-500/30 to-purple-900/10", image: BundleAsset.url4},
@@ -324,7 +324,7 @@ function Showcase() {
                 <div className={`relative aspect-[16/10] rounded-xl overflow-hidden bg-gradient-to-br ${b.tone} border border-white/5 flex items-center justify-center`}>
                   {"image" in b && (b as { image?: string }).image ? (
                     <img
-                      src={ChatGPTAsset}
+                      src={(b as { image: string }).image}
                       alt={b.title}
                       loading="lazy"
                       className="absolute inset-0 w-full h-full object-contain"
