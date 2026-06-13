@@ -1,7 +1,7 @@
 export const BundleAsset = {
-    "url1": "src/assets/images/Chat150.png",
-  "url2": "src/assets/images/busin21.png",
-  "url3": "src/assets/images/Chat17.png",
+    url1: "src/assets/images/Chat150.png",
+  url2: "src/assets/images/busin21.png",
+  url3: "src/assets/images/Chat17.png",
   "url4": "src/assets/images/Midj.png",
   "url5": "src/assets/images/Kids.png",
   "url6": "src/assets/images/8000cook.png",
