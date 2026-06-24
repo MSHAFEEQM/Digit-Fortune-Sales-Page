@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
+import FacebookPixel from '@/components/FacebookPixel'; 
 import {
   Check, Download, Infinity as InfinityIcon, ShieldCheck, Sparkles, Star,
   Zap, Rocket, Bot, TrendingUp, Target, Palette, Library, Briefcase,
@@ -28,10 +29,10 @@ import { StickyCTA } from "@/components/StickyCTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Digit Fortune — 1M+ Digital Assets Bundle @ ₹999 | Lifetime Access" },
-      { name: "description", content: "Get instant access to 1,000,000+ digital assets — ChatGPT prompts, Canva templates, planners, eBooks & more. Lifetime access, commercial rights, ₹999 only." },
-      { property: "og:title", content: "1Million+ Digital Products Bundle — ₹999 Only" },
-      { property: "og:description", content: "1M+ assets, lifetime access, commercial rights. One-time payment of ₹999." },
+      { title: "Digit Fortune — 1M+ Digital Assets Bundle @ ₹499 | Lifetime Access" },
+      { name: "description", content: "Get instant access to 1,000,000+ digital assets — ChatGPT prompts, Canva templates, planners, eBooks & more. Lifetime access, commercial rights, ₹499 only." },
+      { property: "og:title", content: "1Million+ Digital Products Bundle — ₹499 Only" },
+      { property: "og:description", content: "1M+ assets, lifetime access, commercial rights. One-time payment of ₹499." },
       { property: "og:image", content: heroAsset},
       { property: "og:type", content: "product" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -49,17 +50,18 @@ export const Route = createFileRoute("/")({
         image: heroAsset,
         offers: {
           "@type": "Offer",
-          price: "999",
+          price: "499",
           priceCurrency: "INR",
           availability: "https://schema.org/InStock",
         },
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.92",
+          ratingValue: "4.4",
           reviewCount: "126",
         },
       }),
-    }],
+    }, 
+],
   }),
   component: Landing,
 });
@@ -227,7 +229,7 @@ function Hero() {
               Trusted by 370+ Entrepreneurs
             </span>
             <span className="glass rounded-full px-4 py-1.5 text-xs sm:text-sm inline-flex items-center gap-2 text-primary">
-              <Flame className="h-3.5 w-3.5" /> SUMMER SALE — 90% OFF
+              <Flame className="h-3.5 w-3.5" /> SUMMER SALE — 95% OFF
             </span>
           </div>
         </Reveal>
@@ -275,7 +277,7 @@ function Hero() {
             <Reveal delay={360}>
               <div className="mt-6 flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
               <a href="https://superprofile.bio/vp/1-million--digital-assets-mega-bundle" target="_blank" rel="noopener noreferrer" className="btn-primary rounded-2xl px-6 py-4 text-base sm:text-lg inline-flex items-center justify-center gap-1 animate-pulse-glow basis-3/4">
-                  Get Lifetime Access @ ₹999 <ArrowRight className="h-5 w-5" />
+                  Get Lifetime Access @ ₹499 <ArrowRight className="h-5 w-5" />
                 </a>
                 <div className="flex items-center justify-center gap-3 text-xs text-muted-foreground">
                   <span className="inline-flex items-center gap-1"><Lock className="h-3.5 w-3.5" /> Secure checkout</span>
@@ -291,8 +293,8 @@ function Hero() {
                 <Gift className="h-5 w-5 text-gold" />
                 <div className="text-sm">
                   Use coupon{" "}
-                  <span className="font-mono font-bold text-primary tracking-widest">SAVE50</span>{" "}
-                  for an extra <span className="font-semibold">50% OFF</span>
+                  <span className="font-mono font-bold text-primary tracking-widest">SAVE30</span>{" "}
+                  for an extra <span className="font-semibold">30% OFF</span>
                 </div>
               </div>
             </Reveal>
@@ -375,7 +377,7 @@ function ValueTable() {
         <Reveal>
           <div className="text-center max-w-2xl mx-auto">
             <span className="text-xs uppercase tracking-[0.3em] text-primary font-semibold">Real Value Breakdown</span>
-            <h2 className="mt-3 text-3xl sm:text-5xl font-bold">Worth <span className="text-gradient-gold">₹9,999+</span>. Yours for <span className="text-gradient-primary">₹999</span>.</h2>
+            <h2 className="mt-3 text-3xl sm:text-5xl font-bold">Worth <span className="text-gradient-gold">₹9,999+</span>. Yours for <span className="text-gradient-primary">₹499</span>.</h2>
           </div>
         </Reveal>
 
@@ -412,12 +414,12 @@ function ValueTable() {
               </div>
               <div>
                 <div className="text-xs uppercase tracking-widest text-primary">Today's Price</div>
-                <div className="mt-1 font-display text-3xl font-bold text-gradient-primary">₹999</div>
+                <div className="mt-1 font-display text-3xl font-bold text-gradient-primary">₹499</div>
               </div>
               <div>
                 <div className="text-xs uppercase tracking-widest text-gold">You Save</div>
                 <div className="mt-1 font-display text-2xl font-bold text-gradient-gold">
-                  ₹<AnimatedNumber value={total - 999} />+
+                  ₹<AnimatedNumber value={total - 499} />+
                 </div>
               </div>
             </div>
@@ -601,7 +603,7 @@ function FinalPricing() {
                 <span className="rounded-full bg-accent/20 text-accent px-3 py-1 text-xs font-semibold inline-flex items-center gap-1.5">
                   <Flame className="h-3.5 w-3.5" /> Summer Sale
                 </span>
-                <span className="rounded-full bg-primary/20 text-primary px-3 py-1 text-xs font-semibold">90% OFF</span>
+                <span className="rounded-full bg-primary/20 text-primary px-3 py-1 text-xs font-semibold">95% OFF</span>
               </div>
 
               <h2 className="text-center text-3xl sm:text-5xl font-bold">
@@ -610,13 +612,13 @@ function FinalPricing() {
 
               <div className="mt-8 text-center">
                 <div className="text-muted-foreground line-through text-lg">Regular Price ₹9,999</div>
-                <div className="mt-2 font-display text-6xl sm:text-7xl font-black text-gradient-primary">₹999</div>
+                <div className="mt-2 font-display text-6xl sm:text-7xl font-black text-gradient-primary">₹499</div>
                 <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">One-time payment · INR</div>
               </div>
 
               <div className="mt-8 glass rounded-2xl p-5 text-center blink-div">
-                <div className="text-sm text-muted-foreground">Use coupon for extra 50% OFF</div>
-                <div className="mt-2 font-mono font-black text-3xl text-primary tracking-[0.3em]">SAVE50</div>
+                <div className="text-sm text-muted-foreground">Use coupon for extra 30% OFF</div>
+                <div className="mt-2 font-mono font-black text-3xl text-primary tracking-[0.3em]">SAVE30</div>
               </div>
 
               <ul className="mt-8 grid sm:grid-cols-2 gap-3">
@@ -697,7 +699,7 @@ function Landing() {
         <div className="mx-auto max-w-7xl px-4 py-2 text-center text-xs sm:text-sm flex items-center justify-center gap-2 blink-div">
           <Flame className="h-3.5 w-3.5 text-accent" />
           <span className="text-muted-foreground">
-            Summer Sale — Use code <span className="font-mono font-bold text-primary">SAVE50</span> for extra 50% OFF
+            Summer Sale — Use code <span className="font-mono font-bold text-primary">SAVE30</span> for extra 30% OFF
           </span>
         </div>
       </div>
@@ -712,12 +714,13 @@ function Landing() {
             <span className="truncate font-display font-bold text-lg">Digit Fortune</span>
           </a>
           <a href="https://superprofile.bio/vp/1-million--digital-assets-mega-bundle" target="_blank" rel="noopener noreferrer" className="btn-primary rounded-xl px-4 py-2 text-sm whitespace-nowrap inline-flex items-center gap-1.5">
-            Get @ ₹999 <ArrowRight className="h-4 w-4" />
+            Get @ ₹499 <ArrowRight className="h-4 w-4" />
           </a>
         </div>
       </header>
 
       <main>
+        <FacebookPixel />
         <Hero />
         <Showcase />
         <ValueTable />

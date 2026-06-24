@@ -18,19 +18,19 @@ export function StickyCTA() {
       <div className="pointer-events-auto mx-auto max-w-5xl glass-strong rounded-2xl  shadow-card items-center gap-1 p-3 sm:p-4 relative flex flex-col sm:flex-row justify-between relative">
         <div className="min-w-0">
           <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold">
-            <span className="rounded-md bg-accent/20 text-accent px-2 py-0.5">🔥 90% OFF</span>
+            <span className="rounded-md bg-accent/20 text-accent px-2 py-0.5">🔥 95% OFF</span>
             <span className="text-muted-foreground hidden sm:inline">Limited Time</span>
           <div className="mt-0 inline-flex items-center gap-1 glass rounded-xl px-1 py-0 blink-div" > 
                 <div className="text-sm">
                   Use coupon{" "}
-                  <span className="font-mono font-bold text-primary tracking-widest">SAVE50</span>{" "}
-                  for an extra <span className="font-semibold">50% OFF</span>
+                  <span className="font-mono font-bold text-primary tracking-widest">SAVE30</span>{" "}
+                  for an extra <span className="font-semibold">30% OFF</span>
                 </div>
               </div>
           </div>
           <div className="mt-1 flex items-baseline gap-2">
             <span className="text-muted-foreground line-through text-sm">₹9,999</span>
-            <span className="text-xl sm:text-2xl font-display font-bold text-primary">₹999</span>
+            <span className="text-xl sm:text-2xl font-display font-bold text-primary">₹499</span>
           </div>
         </div>
         <a href="https://superprofile.bio/vp/1-million--digital-assets-mega-bundle" target="_blank" rel="noopener noreferrer" className="btn-primary rounded-xl px-4 sm:px-6 py-3 text-sm sm:text-base whitespace-nowrap ">
